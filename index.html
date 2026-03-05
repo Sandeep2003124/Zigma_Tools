@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zigma Neutral • Advanced AI Tools Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3aed',
+            primaryDark: '#6d28d9',
+            accent: '#22d3ee',
+            darkbg: '#020617',
+            glass: 'rgba(255,255,255,0.07)',
+          },
+          boxShadow: {
+            'glow-sm': '0 0 18px rgba(124,58,237,0.45)',
+            'glow-lg': '0 0 35px rgba(34,211,238,0.35)',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'pulse-glow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-darkbg via-indigo-950 to-black text-gray-100 min-h-screen font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
